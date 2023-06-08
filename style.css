@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+html{
+    font-family: "Red Hat Display", Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+:root{
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(225, 75%, 52%);
+}
+body{
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    text-align: center;
+}
+
+/* ### TYPOGRAPHY ### */
+
+h1{
+    font-size: 2.4rem;
+}
+img, p, .plans, .payment-options{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+.plan-title, .edit-plan, .payment-options{
+    font-weight: 700;
+}
+p{
+    font-size: 1.4rem;
+    color: var(--desaturated-blue);
+}
+.price{
+    color: var(--desaturated-blue);
+}
+.edit-plan{
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+.edit-plan:hover{
+    text-decoration: none;
+}
+button{
+    background-color: var(--bright-blue);
+    border: none;
+    border-radius: 10px;
+    height: 4.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: white;
+    box-shadow: 5px 8px 8px var(--pale-blue);
+}
+button:hover{
+    background-color: var(--desaturated-blue);
+}
+
+/* ### LAYOUT ### */
+
+.order-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    max-width: 385px;
+    margin: 15% auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 4px 13px 30px var(--desaturated-blue);
+}
+.main img{
+    max-width: 100%;
+    max-height: 100%;
+}
+h1{
+    margin-top: 3.4rem;
+}
+p{
+    margin: 0 5.5rem;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 4rem;
+    background-color: var(--very-pale-blue);
+    border-radius: 4px;
+    padding: 2.4rem 1.6rem;
+    align-items: center;
+}
+.plans > div{
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+    align-items: center;
+}
+.payment-options{
+    display: flex;
+    flex-direction: column;
+    margin: 0 12%;
+    padding-bottom: 4rem;
+}
+.payment-options > span {
+    color: var(--desaturated-blue);
+}
+.payment-options > span:hover {
+    color: var(--dark-blue);
+}
+
+
+/* ### MEDIA QUERIES ### */
+
+
+
+
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
